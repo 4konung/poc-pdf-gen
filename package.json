@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "build-lib": "webpack --config webpack-pdf-lib.config.js --mode production",
     "start": "NODE_ENV=development webpack-dev-server --client-log-level warning --color --open --port 3000",
-    "generate-pdf": "build-lib && node index.js"
+    "generate-pdf": "npm run build-lib && node index.js"
   },
   "keywords": [],
   "author": "",
